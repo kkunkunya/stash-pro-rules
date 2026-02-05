@@ -4,8 +4,8 @@
 
 [![Stash](https://img.shields.io/badge/Stash-Compatible-blueviolet?style=for-the-badge&logo=apple)](https://stashws.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/ontanaest6506/stash-pro-rules?style=for-the-badge&logo=github)](https://github.com/ontanaest6506/stash-pro-rules/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/ontanaest6506/stash-pro-rules?style=for-the-badge)](https://github.com/ontanaest6506/stash-pro-rules/commits)
+[![Stars](https://img.shields.io/github/stars/kkunkunya/stash-pro-rules?style=for-the-badge&logo=github)](https://github.com/kkunkunya/stash-pro-rules/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/kkunkunya/stash-pro-rules?style=for-the-badge)](https://github.com/kkunkunya/stash-pro-rules/commits)
 
 **专为 Stash 深度优化的分流规则集 | 智能 AI 分流 | 链式代理支持**
 
@@ -38,7 +38,7 @@
 **Stash 中操作**：`首页` → `覆写` → `+` → 粘贴下方链接
 
 ```
-https://raw.githubusercontent.com/ontanaest6506/stash-pro-rules/main/stash-rules.stoverride
+https://raw.githubusercontent.com/kkunkunya/stash-pro-rules/main/stash-rules.stoverride
 ```
 
 <details>
@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/ontanaest6506/stash-pro-rules/main/stash-rules
 > 如果你没有机场订阅，可以使用完整配置（需手动添加节点）
 
 ```
-https://raw.githubusercontent.com/ontanaest6506/stash-pro-rules/main/full-config.yaml
+https://raw.githubusercontent.com/kkunkunya/stash-pro-rules/main/full-config.yaml
 ```
 
 ## 📊 规则架构
@@ -240,7 +240,7 @@ MIT License - 自由使用，请保留原作者信息
 
 如果这个项目对你有帮助，请点个 Star 支持一下！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ontanaest6506/stash-pro-rules&type=Date)](https://star-history.com/#ontanaest6506/stash-pro-rules&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=kkunkunya/stash-pro-rules&type=Date)](https://star-history.com/#kkunkunya/stash-pro-rules&Date)
 
 ---
 
@@ -248,6 +248,6 @@ MIT License - 自由使用，请保留原作者信息
 
 **Made with ❤️ for Stash Users**
 
-[📦 一键导入](#-一键导入) · [🐛 报告问题](https://github.com/ontanaest6506/stash-pro-rules/issues) · [💬 讨论交流](https://github.com/ontanaest6506/stash-pro-rules/discussions)
+[📦 一键导入](#-一键导入) · [🐛 报告问题](https://github.com/kkunkunya/stash-pro-rules/issues) · [💬 讨论交流](https://github.com/kkunkunya/stash-pro-rules/discussions)
 
 </div>
