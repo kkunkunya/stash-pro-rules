@@ -14,3 +14,6 @@
 *.tmp
 *.bak
 *.log
+
+# Firecrawl cache
+.firecrawl/

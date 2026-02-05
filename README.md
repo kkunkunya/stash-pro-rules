@@ -22,6 +22,7 @@
 | 特性 | 说明 |
 |------|------|
 | 🤖 **AI 智能分流** | ChatGPT / Gemini / Claude / Copilot / Manus 完整覆盖，解决区域检测问题 |
+| 🍎 **Apple Intelligence** | Private Cloud Compute / Siri 后端 / iCloud Private Relay 完整支持 |
 | 🔗 **链式代理** | 支持 Relay 链式代理（机场节点 → 落地机），绕过 AI 服务的机房 IP 检测 |
 | ⚡ **负载均衡** | 地区分组自动负载均衡（round-robin），充分利用多节点带宽 |
 | 🌍 **14+ 地区分组** | 港/美/日/新/台/韩/英/德/法/荷/土/俄/印度 + 其他地区，自动按正则匹配 |
@@ -207,6 +208,19 @@ ChatGPT、Gemini 等 AI 服务会检测 IP 类型。机场节点通常是机房 
 
 </details>
 
+<details>
+<summary><b>Q: 如何启用 Apple Intelligence？</b></summary>
+
+1. 确保设备和系统支持（iPhone 15 Pro+、iOS 18.1+）
+2. Apple ID 需要是美国/英国等支持地区
+3. 设备语言和 Siri 语言设置为 English
+4. 在 Stash 中将「🍎 Apple Intelligence」策略组切换到「🔗 链式代理」或「🇺🇸 美国节点」
+5. 重启设备后在设置中开启 Apple Intelligence
+
+详见 [docs/findings.md](docs/findings.md)
+
+</details>
+
 ## 📁 文件说明
 
 ```
@@ -215,13 +229,15 @@ stash-pro-rules/
 ├── stash-rules.stoverride    # 主覆写文件（推荐使用）
 ├── full-config.yaml          # 完整配置文件（无订阅时使用）
 ├── rules/                    # 分离的规则文件
-│   ├── ai-services.yaml      # AI 服务规则
+│   ├── ai-services.yaml      # AI 服务规则（ChatGPT/Gemini/Claude）
+│   ├── apple-intelligence.yaml # Apple Intelligence 规则（PCC/Siri/Private Relay）
 │   ├── google-services.yaml  # 谷歌服务规则
 │   └── streaming.yaml        # 流媒体规则
 ├── docs/                     # 文档
-│   └── migration-guide.md    # 从 Mihomo 迁移指南
+│   ├── migration-guide.md    # 从 Mihomo 迁移指南
+│   └── findings.md           # Apple Intelligence 调研发现
 └── assets/                   # 资源文件
-    └── architecture.png      # 架构图
+    └── architecture.txt      # 架构图
 ```
 
 ## 🤝 贡献指南

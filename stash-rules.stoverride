@@ -1,9 +1,10 @@
 name: '🚀 自定义分流规则'
 desc: |-
   从 Mihomo JS 转换而来的完整分流规则覆写
-  包含：AI服务、谷歌服务、社交媒体、游戏、流媒体等分流
+  包含：AI服务、Apple Intelligence、谷歌服务、社交媒体、游戏、流媒体等分流
+  新增：Apple Intelligence / Private Cloud Compute / iCloud Private Relay 分流
   注意：链式代理需要手动配置落地机节点
-version: '1.0.0'
+version: '1.1.0'
 
 # ==========================================
 # 📦 远程规则集（Rule Providers）
@@ -201,6 +202,20 @@ proxy-groups:
       - "🚀 主力代理"
       - "♻️ 自动选择"
 
+  # —— Apple Intelligence（需要代理）——
+  - name: "🍎 Apple Intelligence"
+    type: select
+    proxies:
+      - "🔗 链式代理"
+      - "🇺🇸 美国节点"
+      - "🇭🇰 香港节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🌐 其他地区"
+      - "🚀 主力代理"
+      - "🎯 全球直连"
+
+  # —— 苹果服务（通常直连）——
   - name: "🍎 苹果服务"
     type: select
     proxies:
@@ -475,7 +490,46 @@ rules:
   - GEOSITE,bing,🤖 Copilot
   - GEOSITE,category-ai-!cn,🤖 AI服务
 
-  # ⑧ 谷歌服务
+  # ⑧ Apple Intelligence / Private Cloud Compute（高优先级）
+  # 必须在 Apple 通用规则之前，确保 AI 功能走代理
+  - DOMAIN,apple-relay.apple.com,🍎 Apple Intelligence
+  - DOMAIN,apple-relay.cloudflare.com,🍎 Apple Intelligence
+  - DOMAIN,apple-relay.fastly-edge.com,🍎 Apple Intelligence
+  - DOMAIN,cp4.cloudflare.com,🍎 Apple Intelligence
+  - DOMAIN,cp10.cloudflare.com,🍎 Apple Intelligence
+
+  # ⑨ Siri 后端服务（影响 Apple Intelligence）
+  - DOMAIN,guzzoni.apple.com,🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,smoot.apple.com,🍎 Apple Intelligence
+
+  # ⑩ iCloud Private Relay
+  - DOMAIN,mask.apple-dns.net,🍎 Apple Intelligence
+  - DOMAIN,canary.mask.apple-dns.net,🍎 Apple Intelligence
+  - DOMAIN,mask-canary.icloud.com,🍎 Apple Intelligence
+  - DOMAIN,mask-api.icloud.com,🍎 Apple Intelligence
+  - DOMAIN,mask-h2.icloud.com,🍎 Apple Intelligence
+  - DOMAIN,mask.icloud.com,🍎 Apple Intelligence
+
+  # ⑪ Apple News（仅美区）
+  - DOMAIN,news-assets.apple.com,🍎 Apple Intelligence
+  - DOMAIN,news-client.apple.com,🍎 Apple Intelligence
+  - DOMAIN,news-edge.apple.com,🍎 Apple Intelligence
+  - DOMAIN,news-events.apple.com,🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,apple.news,🍎 Apple Intelligence
+
+  # ⑫ TestFlight / Apple Developer
+  - DOMAIN,testflight.apple.com,🍎 Apple Intelligence
+  - DOMAIN,developer.apple.com,🍎 Apple Intelligence
+  - DOMAIN,devimages-cdn.apple.com,🍎 Apple Intelligence
+  - DOMAIN,devstreaming-cdn.apple.com,🍎 Apple Intelligence
+  - DOMAIN,docs-assets.developer.apple.com,🍎 Apple Intelligence
+
+  # ⑬ Apple TV+
+  - DOMAIN,tv.applemusic.com,🍎 Apple Intelligence
+  - DOMAIN,hls-svod.itunes.apple.com,🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,tv.apple.com,🍎 Apple Intelligence
+
+  # ⑭ 谷歌服务
   - DOMAIN,mtalk.google.com,🇬 谷歌服务
   - DOMAIN-SUFFIX,talk.google.com,🇬 谷歌服务
   - DOMAIN-SUFFIX,xmpp.google.com,🇬 谷歌服务
@@ -516,17 +570,17 @@ rules:
   - GEOSITE,youtube,🇬 谷歌服务
   - DOMAIN-KEYWORD,google,🇬 谷歌服务
 
-  # ⑨ 自定义代理域名
+  # ⑮ 自定义代理域名
   - RULE-SET,Custom_Proxy_Classical,🚀 主力代理
 
-  # ⑩ 国内直连
+  # ⑯ 国内直连
   - GEOSITE,google-cn,🎯 全球直连
   - GEOSITE,category-games@cn,🎯 全球直连
   - RULE-SET,Steam_CDN_Classical,🎯 全球直连
   - GEOSITE,category-game-platforms-download,🎯 全球直连
   - GEOSITE,category-public-tracker,🎯 全球直连
 
-  # ⑪ 功能分流
+  # ⑰ 功能分流
   - GEOSITE,category-communication,💬 即时通讯
   - GEOSITE,category-social-media-!cn,🌐 社交媒体
   - GEOSITE,onedrive,💾 OneDrive
@@ -534,23 +588,23 @@ rules:
   - GEOSITE,category-speedtest,🚀 测速工具
   - GEOSITE,steam,🎮 Steam
 
-  # ⑫ NBA
+  # ⑱ NBA
   - DOMAIN,watch.nba.com,🏀 NBA
   - DOMAIN-SUFFIX,nba.com,🏀 NBA
 
-  # ⑬ 特殊站点
+  # ⑲ 特殊站点
   - DOMAIN-SUFFIX,18comic.vip,🇭🇰 香港节点
   - DOMAIN-SUFFIX,gamsgo.com,🇺🇸 美国节点
   - DOMAIN-SUFFIX,gamsgo.net,🇺🇸 美国节点
   - DOMAIN-SUFFIX,gamsgo2.com,🇺🇸 美国节点
   - DOMAIN-SUFFIX,gamsgocdn.com,🇺🇸 美国节点
 
-  # ⑭ 大厂服务
+  # ⑳ 大厂服务（Apple 通用规则在 Apple Intelligence 之后）
   - GEOSITE,apple,🍎 苹果服务
   - GEOSITE,microsoft,Ⓜ️ 微软服务
   - GEOSITE,tiktok,🎶 TikTok
 
-  # ⑮ 影音/游戏/媒体
+  # ㉑ 影音/游戏/媒体
   - GEOSITE,category-emby,🎥 Emby
   - GEOSITE,spotify,🎻 Spotify
   - GEOSITE,category-games,🎮 游戏平台
@@ -559,22 +613,22 @@ rules:
   - GEOSITE,paypal,💳 PayPal
   - GEOSITE,category-ecommerce,🛒 国外电商
 
-  # ⑯ GFW 列表
+  # ㉒ GFW 列表
   - GEOSITE,gfw,🚀 主力代理
 
-  # ⑰ GEOIP 分流
+  # ㉓ GEOIP 分流
   - GEOIP,telegram,💬 即时通讯,no-resolve
   - GEOIP,twitter,🌐 社交媒体,no-resolve
   - GEOIP,facebook,🌐 社交媒体,no-resolve
 
-  # ⑱ 中国直连
+  # ㉔ 中国直连
   - GEOSITE,cn,🎯 全球直连
   - GEOIP,cn,🎯 全球直连,no-resolve
 
-  # ⑲ 非标端口
+  # ㉕ 非标端口
   - RULE-SET,Custom_Port_Direct,🔀 非标端口
 
-  # ⑳ 漏网之鱼（兜底）
+  # ㉖ 漏网之鱼（兜底）
   - MATCH,🐟 漏网之鱼
 
 # ==========================================
