@@ -1,0 +1,286 @@
+# Stash 完整配置文件
+# 适用于没有机场订阅的用户，需手动添加节点
+
+# ==========================================
+# 基础设置
+# ==========================================
+mode: rule
+log-level: info
+
+# ==========================================
+# 代理节点（请手动添加你的节点）
+# ==========================================
+proxies:
+  # 示例节点（请替换为你的真实节点）
+  # - name: "🇭🇰 香港01"
+  #   type: ss
+  #   server: hk1.example.com
+  #   port: 443
+  #   cipher: chacha20-ietf-poly1305
+  #   password: your-password
+
+  # 落地机节点（链式代理用）
+  - name: "🏠 落地机"
+    type: socks5
+    server: YOUR_SERVER_IP
+    port: 443
+    username: YOUR_USERNAME
+    password: YOUR_PASSWORD
+    tls: false
+    skip-cert-verify: true
+
+# ==========================================
+# 远程代理集（机场订阅）
+# ==========================================
+proxy-providers:
+  # 示例：取消注释并替换为你的订阅地址
+  # my-subscription:
+  #   url: https://your-subscription-url
+  #   interval: 3600
+  #   health-check:
+  #     enable: true
+  #     url: https://www.gstatic.com/generate_204
+  #     interval: 300
+
+# ==========================================
+# 远程规则集
+# ==========================================
+rule-providers:
+  Custom_Direct_Classical:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical.yaml
+    interval: 28800
+
+  Custom_Proxy_Classical:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical.yaml
+    interval: 28800
+
+  Steam_CDN_Classical:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Classical.yaml
+    interval: 2880
+
+  Custom_Port_Direct:
+    behavior: classical
+    format: yaml
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
+    interval: 28800
+
+# ==========================================
+# 策略组
+# ==========================================
+proxy-groups:
+  # 主力代理
+  - name: "🚀 主力代理"
+    type: select
+    proxies:
+      - "♻️ 自动选择"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🌐 其他地区"
+      - DIRECT
+
+  # 自动选择
+  - name: "♻️ 自动选择"
+    type: url-test
+    include-all: true
+    url: https://www.gstatic.com/generate_204
+    interval: 250
+    tolerance: 50
+
+  # 链式代理
+  - name: "🔗 链式代理"
+    type: relay
+    proxies:
+      - "🇺🇸 美国节点"
+      - "🏠 落地机"
+
+  # AI 服务
+  - name: "🤖 ChatGPT"
+    type: select
+    proxies:
+      - "🔗 链式代理"
+      - "🇺🇸 美国节点"
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+
+  - name: "🤖 Copilot"
+    type: select
+    proxies:
+      - "🔗 链式代理"
+      - "🇺🇸 美国节点"
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+
+  - name: "🤖 AI服务"
+    type: select
+    proxies:
+      - "🔗 链式代理"
+      - "🇺🇸 美国节点"
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+
+  # 谷歌服务
+  - name: "🇬 谷歌服务"
+    type: select
+    proxies:
+      - "🔗 链式代理"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🚀 主力代理"
+
+  # 功能策略组
+  - name: "💬 即时通讯"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+      - DIRECT
+
+  - name: "🌐 社交媒体"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+
+  - name: "🎮 Steam"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🚀 主力代理"
+      - DIRECT
+
+  - name: "🍎 苹果服务"
+    type: select
+    proxies:
+      - DIRECT
+      - "🚀 主力代理"
+
+  - name: "Ⓜ️ 微软服务"
+    type: select
+    proxies:
+      - DIRECT
+      - "🚀 主力代理"
+
+  # 地区分组
+  - name: "🇭🇰 香港节点"
+    type: load-balance
+    strategy: round-robin
+    include-all: true
+    filter: '港|HK|Hong\s*Kong'
+    url: https://www.gstatic.com/generate_204
+    interval: 250
+
+  - name: "🇺🇸 美国节点"
+    type: url-test
+    include-all: true
+    filter: '美|US|United\s*States|洛杉矶|硅谷'
+    url: https://www.gstatic.com/generate_204
+    interval: 250
+    tolerance: 50
+
+  - name: "🇯🇵 日本节点"
+    type: load-balance
+    strategy: round-robin
+    include-all: true
+    filter: '日本|JP|Japan|东京|大阪'
+    url: https://www.gstatic.com/generate_204
+    interval: 250
+
+  - name: "🇸🇬 新加坡节点"
+    type: load-balance
+    strategy: round-robin
+    include-all: true
+    filter: '新加坡|SG|Singapore'
+    url: https://www.gstatic.com/generate_204
+    interval: 250
+
+  - name: "🌐 其他地区"
+    type: select
+    include-all: true
+
+  # 固定分组
+  - name: "🎯 全球直连"
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: "🐟 漏网之鱼"
+    type: select
+    proxies:
+      - "🚀 主力代理"
+      - DIRECT
+
+# ==========================================
+# 分流规则
+# ==========================================
+rules:
+  # 私有网络
+  - GEOSITE,private,🎯 全球直连
+  - GEOIP,private,🎯 全球直连,no-resolve
+  - RULE-SET,Custom_Direct_Classical,🎯 全球直连
+
+  # AI 服务
+  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
+  - GEOSITE,openai,🤖 ChatGPT
+  - GEOSITE,bing,🤖 Copilot
+  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI服务
+  - DOMAIN-SUFFIX,anthropic.com,🤖 AI服务
+  - DOMAIN-SUFFIX,claude.ai,🤖 AI服务
+  - GEOSITE,category-ai-!cn,🤖 AI服务
+
+  # 谷歌服务
+  - GEOSITE,google,🇬 谷歌服务
+  - GEOSITE,youtube,🇬 谷歌服务
+
+  # 功能分流
+  - GEOSITE,category-communication,💬 即时通讯
+  - GEOSITE,category-social-media-!cn,🌐 社交媒体
+  - GEOSITE,steam,🎮 Steam
+  - GEOSITE,apple,🍎 苹果服务
+  - GEOSITE,microsoft,Ⓜ️ 微软服务
+
+  # 自定义代理
+  - RULE-SET,Custom_Proxy_Classical,🚀 主力代理
+
+  # 国内直连
+  - GEOSITE,google-cn,🎯 全球直连
+  - RULE-SET,Steam_CDN_Classical,🎯 全球直连
+  - GEOSITE,cn,🎯 全球直连
+  - GEOIP,cn,🎯 全球直连,no-resolve
+
+  # GFW 列表
+  - GEOSITE,gfw,🚀 主力代理
+
+  # 漏网之鱼
+  - MATCH,🐟 漏网之鱼
+
+# ==========================================
+# DNS 配置
+# ==========================================
+dns:
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 8.8.8.8
+  fallback:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+  fake-ip-filter:
+    - "+.lan"
+    - "+.local"
+    - "time.*.com"
+    - "ntp.*.com"

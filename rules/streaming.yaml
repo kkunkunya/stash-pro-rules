@@ -1,0 +1,66 @@
+# 流媒体服务分流规则
+# 包含：Netflix / Disney+ / Spotify / Emby 等
+
+payload:
+  # ==========================================
+  # Netflix
+  # ==========================================
+  - DOMAIN-SUFFIX,netflix.com
+  - DOMAIN-SUFFIX,netflix.net
+  - DOMAIN-SUFFIX,nflximg.net
+  - DOMAIN-SUFFIX,nflximg.com
+  - DOMAIN-SUFFIX,nflxvideo.net
+  - DOMAIN-SUFFIX,nflxso.net
+  - DOMAIN-SUFFIX,nflxext.com
+
+  # ==========================================
+  # Disney+
+  # ==========================================
+  - DOMAIN-SUFFIX,disney.com
+  - DOMAIN-SUFFIX,disneyplus.com
+  - DOMAIN-SUFFIX,disney-plus.net
+  - DOMAIN-SUFFIX,dssott.com
+  - DOMAIN-SUFFIX,bamgrid.com
+  - DOMAIN-SUFFIX,go.com
+
+  # ==========================================
+  # Spotify
+  # ==========================================
+  - DOMAIN-SUFFIX,spotify.com
+  - DOMAIN-SUFFIX,spotifycdn.com
+  - DOMAIN-SUFFIX,scdn.co
+  - DOMAIN-SUFFIX,spoti.fi
+
+  # ==========================================
+  # HBO Max
+  # ==========================================
+  - DOMAIN-SUFFIX,hbo.com
+  - DOMAIN-SUFFIX,hbomax.com
+  - DOMAIN-SUFFIX,hbomaxcdn.com
+  - DOMAIN-SUFFIX,max.com
+
+  # ==========================================
+  # Prime Video
+  # ==========================================
+  - DOMAIN-SUFFIX,primevideo.com
+  - DOMAIN-SUFFIX,amazonvideo.com
+  - DOMAIN-SUFFIX,aiv-cdn.net
+
+  # ==========================================
+  # Emby / Jellyfin / Plex
+  # ==========================================
+  - DOMAIN-SUFFIX,emby.media
+  - DOMAIN-SUFFIX,jellyfin.org
+  - DOMAIN-SUFFIX,plex.tv
+  - DOMAIN-SUFFIX,plex.direct
+
+  # ==========================================
+  # TikTok
+  # ==========================================
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,ibytedtos.com
+  - DOMAIN-SUFFIX,muscdn.com
