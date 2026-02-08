@@ -500,21 +500,26 @@ rules:
 
   # ⑨ Siri 后端服务（影响 Apple Intelligence）
   - DOMAIN,guzzoni.apple.com,🍎 Apple Intelligence
+  - DOMAIN,api-glb-sea.smoot.apple.com,🍎 Apple Intelligence
   - DOMAIN-SUFFIX,smoot.apple.com,🍎 Apple Intelligence
 
-  # ⑩ iCloud Private Relay
+  # ⑩ iCloud Private Relay（参考 blackmatrix7/ios_rule_script）
+  - DOMAIN,mask-api.fe.apple-dns.net,🍎 Apple Intelligence
+  - DOMAIN,mask-api.icloud.com,🍎 Apple Intelligence
+  - DOMAIN,mask-t.apple-dns.net,🍎 Apple Intelligence
   - DOMAIN,mask.apple-dns.net,🍎 Apple Intelligence
   - DOMAIN,canary.mask.apple-dns.net,🍎 Apple Intelligence
   - DOMAIN,mask-canary.icloud.com,🍎 Apple Intelligence
-  - DOMAIN,mask-api.icloud.com,🍎 Apple Intelligence
-  - DOMAIN,mask-h2.icloud.com,🍎 Apple Intelligence
-  - DOMAIN,mask.icloud.com,🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,mask-h2.icloud.com,🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,mask.icloud.com,🍎 Apple Intelligence
 
   # ⑪ Apple News（仅美区）
   - DOMAIN,news-assets.apple.com,🍎 Apple Intelligence
   - DOMAIN,news-client.apple.com,🍎 Apple Intelligence
   - DOMAIN,news-edge.apple.com,🍎 Apple Intelligence
   - DOMAIN,news-events.apple.com,🍎 Apple Intelligence
+  - DOMAIN,news-client-search.apple.com,🍎 Apple Intelligence
+  - DOMAIN,gspe1-ssl.ls.apple.com,🍎 Apple Intelligence
   - DOMAIN-SUFFIX,apple.news,🍎 Apple Intelligence
 
   # ⑫ TestFlight / Apple Developer
@@ -527,6 +532,9 @@ rules:
   # ⑬ Apple TV+
   - DOMAIN,tv.applemusic.com,🍎 Apple Intelligence
   - DOMAIN,hls-svod.itunes.apple.com,🍎 Apple Intelligence
+  - DOMAIN,np-edge.itunes.apple.com,🍎 Apple Intelligence
+  - DOMAIN,play-edge.itunes.apple.com,🍎 Apple Intelligence
+  - DOMAIN,uts-api.itunes.apple.com,🍎 Apple Intelligence
   - DOMAIN-SUFFIX,tv.apple.com,🍎 Apple Intelligence
 
   # ⑭ 谷歌服务
