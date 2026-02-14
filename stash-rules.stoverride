@@ -4,7 +4,7 @@ desc: |-
   包含：AI服务、Apple Intelligence、谷歌服务、社交媒体、游戏、流媒体等分流
   新增：Apple Intelligence / Private Cloud Compute / iCloud Private Relay 分流
   注意：链式代理需要手动配置落地机节点
-version: '1.1.0'
+version: '1.2.0'
 
 # ==========================================
 # 📦 远程规则集（Rule Providers）
@@ -158,6 +158,17 @@ proxy-groups:
       - "🚀 主力代理"
       - "♻️ 自动选择"
       - "🎯 全球直连"
+
+  - name: "₿ 加密交易所"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🌐 其他地区"
+      - "🚀 主力代理"
+      - "♻️ 自动选择"
 
   - name: "🚀 GitHub"
     type: select
@@ -591,6 +602,72 @@ rules:
   # ⑰ 功能分流
   - GEOSITE,category-communication,💬 即时通讯
   - GEOSITE,category-social-media-!cn,🌐 社交媒体
+
+  # Twitter / X 精细分流
+  - DOMAIN-SUFFIX,x.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,t.co,🌐 社交媒体
+  - DOMAIN-SUFFIX,tweetdeck.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,periscope.tv,🌐 社交媒体
+  - DOMAIN-SUFFIX,pscp.tv,🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.co,🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.org,🌐 社交媒体
+  - DOMAIN-SUFFIX,twitpic.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.biz,🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.jp,🌐 社交媒体
+  - DOMAIN-SUFFIX,twittercommunity.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,twitterinc.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,twttr.com,🌐 社交媒体
+  - DOMAIN-SUFFIX,vine.co,🌐 社交媒体
+  - DOMAIN-KEYWORD,twitter,🌐 社交媒体
+  - IP-CIDR,199.16.156.0/22,🌐 社交媒体,no-resolve
+  - IP-CIDR,199.59.148.0/22,🌐 社交媒体,no-resolve
+  - IP-CIDR,104.244.42.0/21,🌐 社交媒体,no-resolve
+  - IP-CIDR,192.133.76.0/22,🌐 社交媒体,no-resolve
+  - IP-CIDR,199.96.56.0/21,🌐 社交媒体,no-resolve
+  - IP-CIDR,209.237.192.0/19,🌐 社交媒体,no-resolve
+  - IP-CIDR,69.195.160.0/19,🌐 社交媒体,no-resolve
+
+  # 加密货币交易所 / 行情站点
+  - DOMAIN-SUFFIX,binance.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,binance.cloud,₿ 加密交易所
+  - DOMAIN-SUFFIX,bnappzh.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,bnbstatic.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,okx.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,okex.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,oklink.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,okx-dns.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,bybit.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.top,₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.vip,₿ 加密交易所
+  - DOMAIN-SUFFIX,aicoin.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,blockchair.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,blockchain.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,bscscan.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,coinglass.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,etherscan.io,₿ 加密交易所
+  - DOMAIN-SUFFIX,gate.io,₿ 加密交易所
+  - DOMAIN-SUFFIX,mexc.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,tradingview.com,₿ 加密交易所
+  - DOMAIN-SUFFIX,tokenpocket.pro,₿ 加密交易所
+  - DOMAIN-KEYWORD,binance,₿ 加密交易所
+  - DOMAIN-KEYWORD,bitcoin,₿ 加密交易所
+  - DOMAIN-KEYWORD,bitget,₿ 加密交易所
+  - DOMAIN-KEYWORD,bybit,₿ 加密交易所
+  - DOMAIN-KEYWORD,coinbase,₿ 加密交易所
+  - DOMAIN-KEYWORD,coingecko,₿ 加密交易所
+  - DOMAIN-KEYWORD,coinmarketcap,₿ 加密交易所
+  - DOMAIN-KEYWORD,crypto,₿ 加密交易所
+  - DOMAIN-KEYWORD,ethereum,₿ 加密交易所
+  - DOMAIN-KEYWORD,huobi,₿ 加密交易所
+  - DOMAIN-KEYWORD,kucoin,₿ 加密交易所
+  - DOMAIN-KEYWORD,okx,₿ 加密交易所
+  - DOMAIN-KEYWORD,okex,₿ 加密交易所
+  - DOMAIN-KEYWORD,tronscan,₿ 加密交易所
+  - DOMAIN-KEYWORD,uniswap,₿ 加密交易所
+
   - GEOSITE,onedrive,💾 OneDrive
   - GEOSITE,github,🚀 GitHub
   - GEOSITE,category-speedtest,🚀 测速工具
