@@ -54,22 +54,22 @@ proxies:
 # ==========================================
 proxy-groups:
   # —— 主力代理（手动选择）——
-  - name: "🚀 主力代理"
+  - name: "🧩 🚀 主力代理"
     type: select
     proxies:
-      - "⚡ 智能测速"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🇼🇸 台湾节点"
-      - "🇰🇷 韩国节点"
-      - "🇬🇧 英国节点"
-      - "🇩🇪 德国节点"
-      - "🌐 其他地区"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🇼🇸 台湾节点"
+      - "🧩 🇰🇷 韩国节点"
+      - "🧩 🇬🇧 英国节点"
+      - "🧩 🇩🇪 德国节点"
+      - "🧩 🌐 其他地区"
 
   # —— 智能测速（延迟测速）——
-  - name: "⚡ 智能测速"
+  - name: "🧩 ⚡ 智能测速"
     type: url-test
     include-all: true
     url: https://www.gstatic.com/generate_204
@@ -78,273 +78,273 @@ proxy-groups:
 
   # —— 链式代理（relay 实现）——
   # 流量路径：你 → 美国节点 → 落地机 → 目标
-  - name: "🔗 链式代理"
+  - name: "🧩 🔗 链式代理"
     type: relay
     proxies:
-      - "🇺🇸 美国节点"
+      - "🧩 🇺🇸 美国节点"
       - "🏠 落地机"
 
   # —— AI 服务策略组 ——
-  - name: "🤖 ChatGPT"
+  - name: "🧩 🤖 ChatGPT"
     type: select
     proxies:
-      - "🔗 链式代理"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🔗 链式代理"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🤖 Copilot"
+  - name: "🧩 🤖 Copilot"
     type: select
     proxies:
-      - "🔗 链式代理"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🔗 链式代理"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🤖 AI服务"
+  - name: "🧩 🤖 AI服务"
     type: select
     proxies:
-      - "🔗 链式代理"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🔗 链式代理"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
   # —— 谷歌服务 ——
-  - name: "🇬 谷歌服务"
+  - name: "🧩 🇬 谷歌服务"
     type: select
     proxies:
-      - "🔗 链式代理"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🔗 链式代理"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
   # —— 功能策略组 ——
-  - name: "💬 即时通讯"
+  - name: "🧩 💬 即时通讯"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "🌐 社交媒体"
+  - name: "🧩 🌐 社交媒体"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "₿ 加密交易所"
+  - name: "🧩 ₿ 加密交易所"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🚀 GitHub"
+  - name: "🧩 🚀 GitHub"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "🎶 TikTok"
+  - name: "🧩 🎶 TikTok"
     type: select
     proxies:
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇭🇰 香港节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "📹 YouTube"
+  - name: "🧩 📹 YouTube"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🏀 NBA"
+  - name: "🧩 🏀 NBA"
     type: select
     proxies:
-      - "🇺🇸 美国节点"
-      - "🇭🇰 香港节点"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
   # —— Apple Intelligence（需要代理）——
-  - name: "🍎 Apple Intelligence"
+  - name: "🧩 🍎 Apple Intelligence"
     type: select
     proxies:
-      - "🔗 链式代理"
-      - "🇺🇸 美国节点"
-      - "🇭🇰 香港节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "🎯 全球直连"
+      - "🧩 🔗 链式代理"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 🎯 全球直连"
 
   # —— 苹果服务（通常直连）——
-  - name: "🍎 苹果服务"
+  - name: "🧩 🍎 苹果服务"
     type: select
     proxies:
-      - "🎯 全球直连"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🚀 主力代理"
+      - "🧩 🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🚀 主力代理"
 
-  - name: "Ⓜ️ 微软服务"
+  - name: "🧩 Ⓜ️ 微软服务"
     type: select
     proxies:
-      - "🎯 全球直连"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🚀 主力代理"
+      - "🧩 🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🚀 主力代理"
 
-  - name: "💾 OneDrive"
+  - name: "🧩 💾 OneDrive"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "🎻 Spotify"
+  - name: "🧩 🎻 Spotify"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🎥 Emby"
+  - name: "🧩 🎥 Emby"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🎮 Steam"
+  - name: "🧩 🎮 Steam"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "🎮 游戏平台"
+  - name: "🧩 🎮 游戏平台"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
-      - "🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
+      - "🧩 🎯 全球直连"
 
-  - name: "🌎 国外媒体"
+  - name: "🧩 🌎 国外媒体"
     type: select
     proxies:
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇸🇬 新加坡节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇸🇬 新加坡节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "⏬ PT站点"
+  - name: "🧩 ⏬ PT站点"
     type: select
     proxies:
-      - "🎯 全球直连"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🚀 主力代理"
+      - "🧩 🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🚀 主力代理"
 
-  - name: "💳 PayPal"
+  - name: "🧩 💳 PayPal"
     type: select
     proxies:
-      - "🇺🇸 美国节点"
-      - "🇭🇰 香港节点"
-      - "🚀 主力代理"
-      - "🎯 全球直连"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🚀 主力代理"
+      - "🧩 🎯 全球直连"
 
-  - name: "🛒 国外电商"
+  - name: "🧩 🛒 国外电商"
     type: select
     proxies:
-      - "🇺🇸 美国节点"
-      - "🇯🇵 日本节点"
-      - "🇭🇰 香港节点"
-      - "🌐 其他地区"
-      - "🚀 主力代理"
-      - "⚡ 智能测速"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🇯🇵 日本节点"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🌐 其他地区"
+      - "🧩 🚀 主力代理"
+      - "🧩 ⚡ 智能测速"
 
-  - name: "🚀 测速工具"
+  - name: "🧩 🚀 测速工具"
     type: select
     proxies:
-      - "🎯 全球直连"
-      - "🇭🇰 香港节点"
-      - "🇺🇸 美国节点"
-      - "🚀 主力代理"
+      - "🧩 🎯 全球直连"
+      - "🧩 🇭🇰 香港节点"
+      - "🧩 🇺🇸 美国节点"
+      - "🧩 🚀 主力代理"
 
   # —— 地区分组（负载均衡）——
-  - name: "🇭🇰 香港节点"
+  - name: "🧩 🇭🇰 香港节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -352,7 +352,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇺🇸 美国节点"
+  - name: "🧩 🇺🇸 美国节点"
     type: url-test
     include-all: true
     filter: '美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\bUS\b|United\s*States|UnitedStates'
@@ -360,7 +360,7 @@ proxy-groups:
     interval: 250
     tolerance: 50
 
-  - name: "🇯🇵 日本节点"
+  - name: "🧩 🇯🇵 日本节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -368,7 +368,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇸🇬 新加坡节点"
+  - name: "🧩 🇸🇬 新加坡节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -376,7 +376,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇼🇸 台湾节点"
+  - name: "🧩 🇼🇸 台湾节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -384,7 +384,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇰🇷 韩国节点"
+  - name: "🧩 🇰🇷 韩国节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -392,7 +392,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇬🇧 英国节点"
+  - name: "🧩 🇬🇧 英国节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -400,7 +400,7 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🇩🇪 德国节点"
+  - name: "🧩 🇩🇪 德国节点"
     type: load-balance
     strategy: round-robin
     include-all: true
@@ -408,313 +408,313 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 250
 
-  - name: "🌐 其他地区"
+  - name: "🧩 🌐 其他地区"
     type: select
     include-all: true
     filter: '^(?!.*(港|HK|Hong\s*Kong|美|US|United\s*States|日本|JP|Japan|新加坡|SG|Singapore|台|TW|Taiwan|韩|KR|Korea|英国|Britain|德国|Germany)).*$'
 
   # —— 固定分组 ——
-  - name: "🎯 全球直连"
+  - name: "🧩 🎯 全球直连"
     type: select
     proxies:
       - DIRECT
 
-  - name: "🔀 非标端口"
+  - name: "🧩 🔀 非标端口"
     type: select
     proxies:
-      - "🎯 全球直连"
-      - "🚀 主力代理"
+      - "🧩 🎯 全球直连"
+      - "🧩 🚀 主力代理"
 
-  - name: "🐟 漏网之鱼"
+  - name: "🧩 🐟 漏网之鱼"
     type: select
     proxies:
-      - "🚀 主力代理"
-      - "🎯 全球直连"
+      - "🧩 🚀 主力代理"
+      - "🧩 🎯 全球直连"
 
 # ==========================================
 # 📜 分流规则（Rules）
 # ==========================================
 rules:
   # ① 私有网络直连
-  - GEOSITE,private,🎯 全球直连
-  - GEOIP,private,🎯 全球直连,no-resolve
-  - RULE-SET,Custom_Direct_Classical,🎯 全球直连
+  - GEOSITE,private,🧩 🎯 全球直连
+  - GEOIP,private,🧩 🎯 全球直连,no-resolve
+  - RULE-SET,Custom_Direct_Classical,🧩 🎯 全球直连
 
   # ② ChatGPT / OpenAI（高优先级）
-  - DOMAIN,ab.chatgpt.com,🤖 ChatGPT
-  - DOMAIN,android.chat.openai.com,🤖 ChatGPT
-  - DOMAIN,ios.chat.openai.com,🤖 ChatGPT
-  - DOMAIN,chat.openai.com,🤖 ChatGPT
-  - DOMAIN,api.openai.com,🤖 ChatGPT
-  - DOMAIN,auth.openai.com,🤖 ChatGPT
-  - DOMAIN,auth0.openai.com,🤖 ChatGPT
-  - DOMAIN,cdn.oaistatic.com,🤖 ChatGPT
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🤖 ChatGPT
-  - DOMAIN-SUFFIX,chatgpt.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openai.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaistatic.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 ChatGPT
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 ChatGPT
+  - DOMAIN,ab.chatgpt.com,🧩 🤖 ChatGPT
+  - DOMAIN,android.chat.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,ios.chat.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,chat.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,api.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,auth.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,auth0.openai.com,🧩 🤖 ChatGPT
+  - DOMAIN,cdn.oaistatic.com,🧩 🤖 ChatGPT
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🧩 🤖 ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com,🧩 🤖 ChatGPT
+  - DOMAIN-SUFFIX,openai.com,🧩 🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaistatic.com,🧩 🤖 ChatGPT
+  - DOMAIN-SUFFIX,oaiusercontent.com,🧩 🤖 ChatGPT
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🧩 🤖 ChatGPT
 
   # ③ Gemini / Google AI（OAuth 登录）
-  - DOMAIN,accounts.google.com,🤖 AI服务
-  - DOMAIN,oauth2.googleapis.com,🤖 AI服务
+  - DOMAIN,accounts.google.com,🧩 🤖 AI服务
+  - DOMAIN,oauth2.googleapis.com,🧩 🤖 AI服务
 
   # ④ Gemini CLI Code Assist
-  - DOMAIN,cloudcode-pa.googleapis.com,🤖 AI服务
-  - DOMAIN,cloudaicompanion.googleapis.com,🤖 AI服务
-  - DOMAIN,serviceusage.googleapis.com,🤖 AI服务
-  - DOMAIN,cloudresourcemanager.googleapis.com,🤖 AI服务
-  - DOMAIN,people.googleapis.com,🤖 AI服务
-  - DOMAIN,firebaselogging-pa.googleapis.com,🤖 AI服务
-  - DOMAIN,generativelanguage.googleapis.com,🤖 AI服务
-  - DOMAIN,aiplatform.googleapis.com,🤖 AI服务
+  - DOMAIN,cloudcode-pa.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,cloudaicompanion.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,serviceusage.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,cloudresourcemanager.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,people.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,firebaselogging-pa.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,generativelanguage.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,aiplatform.googleapis.com,🧩 🤖 AI服务
 
   # ⑤ Gemini 其他域名
-  - DOMAIN-SUFFIX,gemini.google.com,🤖 AI服务
-  - DOMAIN-SUFFIX,aistudio.google.com,🤖 AI服务
-  - DOMAIN-SUFFIX,makersuite.google.com,🤖 AI服务
-  - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,🤖 AI服务
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🤖 AI服务
-  - DOMAIN-SUFFIX,bard.google.com,🤖 AI服务
-  - DOMAIN-SUFFIX,geller-pa.googleapis.com,🤖 AI服务
-  - DOMAIN,alkalicore-pa.clients6.google.com,🤖 AI服务
-  - DOMAIN,ai.google.dev,🤖 AI服务
-  - DOMAIN-SUFFIX,generativeai.google,🤖 AI服务
-  - DOMAIN-SUFFIX,gemini.google,🤖 AI服务
-  - DOMAIN-SUFFIX,deepmind.com,🤖 AI服务
-  - DOMAIN-SUFFIX,deepmind.google,🤖 AI服务
-  - DOMAIN-SUFFIX,apis.google.com,🤖 AI服务
-  - DOMAIN,play.googleapis.com,🤖 AI服务
+  - DOMAIN-SUFFIX,gemini.google.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,aistudio.google.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,makersuite.google.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,bard.google.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,geller-pa.googleapis.com,🧩 🤖 AI服务
+  - DOMAIN,alkalicore-pa.clients6.google.com,🧩 🤖 AI服务
+  - DOMAIN,ai.google.dev,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,generativeai.google,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,gemini.google,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,deepmind.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,deepmind.google,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,apis.google.com,🧩 🤖 AI服务
+  - DOMAIN,play.googleapis.com,🧩 🤖 AI服务
 
   # ⑥ Manus AI
-  - DOMAIN-SUFFIX,manus.im,🤖 AI服务
-  - DOMAIN-SUFFIX,manus.ai,🤖 AI服务
-  - DOMAIN-SUFFIX,manus.com,🤖 AI服务
-  - DOMAIN-SUFFIX,manus.space,🤖 AI服务
-  - DOMAIN-SUFFIX,manuscdn.com,🤖 AI服务
-  - DOMAIN-SUFFIX,butterfly-effect.dev,🤖 AI服务
-  - DOMAIN-KEYWORD,manus,🤖 AI服务
+  - DOMAIN-SUFFIX,manus.im,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,manus.ai,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,manus.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,manus.space,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,manuscdn.com,🧩 🤖 AI服务
+  - DOMAIN-SUFFIX,butterfly-effect.dev,🧩 🤖 AI服务
+  - DOMAIN-KEYWORD,manus,🧩 🤖 AI服务
 
   # ⑦ GEOSITE AI 兜底
-  - GEOSITE,openai,🤖 ChatGPT
-  - GEOSITE,bing,🤖 Copilot
-  - GEOSITE,category-ai-!cn,🤖 AI服务
+  - GEOSITE,openai,🧩 🤖 ChatGPT
+  - GEOSITE,bing,🧩 🤖 Copilot
+  - GEOSITE,category-ai-!cn,🧩 🤖 AI服务
 
   # ⑧ Apple Intelligence / Private Cloud Compute（高优先级）
   # 必须在 Apple 通用规则之前，确保 AI 功能走代理
-  - DOMAIN,apple-relay.apple.com,🍎 Apple Intelligence
-  - DOMAIN,apple-relay.cloudflare.com,🍎 Apple Intelligence
-  - DOMAIN,apple-relay.fastly-edge.com,🍎 Apple Intelligence
-  - DOMAIN,cp4.cloudflare.com,🍎 Apple Intelligence
-  - DOMAIN,cp10.cloudflare.com,🍎 Apple Intelligence
+  - DOMAIN,apple-relay.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,apple-relay.cloudflare.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,apple-relay.fastly-edge.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,cp4.cloudflare.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,cp10.cloudflare.com,🧩 🍎 Apple Intelligence
 
   # ⑨ Siri 后端服务（影响 Apple Intelligence）
-  - DOMAIN,guzzoni.apple.com,🍎 Apple Intelligence
-  - DOMAIN,api-glb-sea.smoot.apple.com,🍎 Apple Intelligence
-  - DOMAIN-SUFFIX,smoot.apple.com,🍎 Apple Intelligence
+  - DOMAIN,guzzoni.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,api-glb-sea.smoot.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,smoot.apple.com,🧩 🍎 Apple Intelligence
 
   # ⑩ iCloud Private Relay（参考 blackmatrix7/ios_rule_script）
-  - DOMAIN,mask-api.fe.apple-dns.net,🍎 Apple Intelligence
-  - DOMAIN,mask-api.icloud.com,🍎 Apple Intelligence
-  - DOMAIN,mask-t.apple-dns.net,🍎 Apple Intelligence
-  - DOMAIN,mask.apple-dns.net,🍎 Apple Intelligence
-  - DOMAIN,canary.mask.apple-dns.net,🍎 Apple Intelligence
-  - DOMAIN,mask-canary.icloud.com,🍎 Apple Intelligence
-  - DOMAIN-SUFFIX,mask-h2.icloud.com,🍎 Apple Intelligence
-  - DOMAIN-SUFFIX,mask.icloud.com,🍎 Apple Intelligence
+  - DOMAIN,mask-api.fe.apple-dns.net,🧩 🍎 Apple Intelligence
+  - DOMAIN,mask-api.icloud.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,mask-t.apple-dns.net,🧩 🍎 Apple Intelligence
+  - DOMAIN,mask.apple-dns.net,🧩 🍎 Apple Intelligence
+  - DOMAIN,canary.mask.apple-dns.net,🧩 🍎 Apple Intelligence
+  - DOMAIN,mask-canary.icloud.com,🧩 🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,mask-h2.icloud.com,🧩 🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,mask.icloud.com,🧩 🍎 Apple Intelligence
 
   # ⑪ Apple News（仅美区）
-  - DOMAIN,news-assets.apple.com,🍎 Apple Intelligence
-  - DOMAIN,news-client.apple.com,🍎 Apple Intelligence
-  - DOMAIN,news-edge.apple.com,🍎 Apple Intelligence
-  - DOMAIN,news-events.apple.com,🍎 Apple Intelligence
-  - DOMAIN,news-client-search.apple.com,🍎 Apple Intelligence
-  - DOMAIN,gspe1-ssl.ls.apple.com,🍎 Apple Intelligence
-  - DOMAIN-SUFFIX,apple.news,🍎 Apple Intelligence
+  - DOMAIN,news-assets.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,news-client.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,news-edge.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,news-events.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,news-client-search.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,gspe1-ssl.ls.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,apple.news,🧩 🍎 Apple Intelligence
 
   # ⑫ TestFlight / Apple Developer
-  - DOMAIN,testflight.apple.com,🍎 Apple Intelligence
-  - DOMAIN,developer.apple.com,🍎 Apple Intelligence
-  - DOMAIN,devimages-cdn.apple.com,🍎 Apple Intelligence
-  - DOMAIN,devstreaming-cdn.apple.com,🍎 Apple Intelligence
-  - DOMAIN,docs-assets.developer.apple.com,🍎 Apple Intelligence
+  - DOMAIN,testflight.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,developer.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,devimages-cdn.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,devstreaming-cdn.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,docs-assets.developer.apple.com,🧩 🍎 Apple Intelligence
 
   # ⑬ Apple TV+
-  - DOMAIN,tv.applemusic.com,🍎 Apple Intelligence
-  - DOMAIN,hls-svod.itunes.apple.com,🍎 Apple Intelligence
-  - DOMAIN,np-edge.itunes.apple.com,🍎 Apple Intelligence
-  - DOMAIN,play-edge.itunes.apple.com,🍎 Apple Intelligence
-  - DOMAIN,uts-api.itunes.apple.com,🍎 Apple Intelligence
-  - DOMAIN-SUFFIX,tv.apple.com,🍎 Apple Intelligence
+  - DOMAIN,tv.applemusic.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,hls-svod.itunes.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,np-edge.itunes.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,play-edge.itunes.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN,uts-api.itunes.apple.com,🧩 🍎 Apple Intelligence
+  - DOMAIN-SUFFIX,tv.apple.com,🧩 🍎 Apple Intelligence
 
   # ⑭ 谷歌服务
-  - DOMAIN,mtalk.google.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,talk.google.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,xmpp.google.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,gcm.googleapis.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,fcm.googleapis.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,google.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,google.com.hk,🇬 谷歌服务
-  - DOMAIN-SUFFIX,google.co.jp,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googleapis.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googlevideo.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googleusercontent.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,gstatic.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,ggpht.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,gvt1.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,gvt2.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,gvt3.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,youtube.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,ytimg.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,youtu.be,🇬 谷歌服务
-  - DOMAIN-SUFFIX,yt.be,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googlesyndication.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googleadservices.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googletagmanager.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googletagservices.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,google-analytics.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,doubleclick.net,🇬 谷歌服务
-  - DOMAIN-SUFFIX,withgoogle.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,appspot.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,android.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,chromium.org,🇬 谷歌服务
-  - DOMAIN-SUFFIX,chrome.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googlesource.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,googlecode.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,blogger.com,🇬 谷歌服务
-  - DOMAIN-SUFFIX,blogspot.com,🇬 谷歌服务
-  - GEOSITE,googlefcm,🇬 谷歌服务
-  - GEOSITE,google,🇬 谷歌服务
-  - GEOSITE,youtube,🇬 谷歌服务
-  - DOMAIN-KEYWORD,google,🇬 谷歌服务
+  - DOMAIN,mtalk.google.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,talk.google.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,xmpp.google.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,gcm.googleapis.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,fcm.googleapis.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,google.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,google.com.hk,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,google.co.jp,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googleapis.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googlevideo.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googleusercontent.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,gstatic.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,ggpht.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,gvt1.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,gvt2.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,gvt3.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,youtube.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,ytimg.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,youtu.be,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,yt.be,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googlesyndication.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googleadservices.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googletagmanager.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googletagservices.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,google-analytics.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,doubleclick.net,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,withgoogle.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,appspot.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,android.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,chromium.org,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,chrome.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googlesource.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,googlecode.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,blogger.com,🧩 🇬 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com,🧩 🇬 谷歌服务
+  - GEOSITE,googlefcm,🧩 🇬 谷歌服务
+  - GEOSITE,google,🧩 🇬 谷歌服务
+  - GEOSITE,youtube,🧩 🇬 谷歌服务
+  - DOMAIN-KEYWORD,google,🧩 🇬 谷歌服务
 
   # ⑮ 自定义代理域名
-  - RULE-SET,Custom_Proxy_Classical,🚀 主力代理
+  - RULE-SET,Custom_Proxy_Classical,🧩 🚀 主力代理
 
   # ⑯ 国内直连
-  - GEOSITE,google-cn,🎯 全球直连
-  - GEOSITE,category-games@cn,🎯 全球直连
-  - RULE-SET,Steam_CDN_Classical,🎯 全球直连
-  - GEOSITE,category-game-platforms-download,🎯 全球直连
-  - GEOSITE,category-public-tracker,🎯 全球直连
+  - GEOSITE,google-cn,🧩 🎯 全球直连
+  - GEOSITE,category-games@cn,🧩 🎯 全球直连
+  - RULE-SET,Steam_CDN_Classical,🧩 🎯 全球直连
+  - GEOSITE,category-game-platforms-download,🧩 🎯 全球直连
+  - GEOSITE,category-public-tracker,🧩 🎯 全球直连
 
   # ⑰ 功能分流
-  - GEOSITE,category-communication,💬 即时通讯
-  - GEOSITE,category-social-media-!cn,🌐 社交媒体
+  - GEOSITE,category-communication,🧩 💬 即时通讯
+  - GEOSITE,category-social-media-!cn,🧩 🌐 社交媒体
 
   # Twitter / X 精细分流
-  - DOMAIN-SUFFIX,x.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,twitter.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,twimg.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,t.co,🌐 社交媒体
-  - DOMAIN-SUFFIX,tweetdeck.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,periscope.tv,🌐 社交媒体
-  - DOMAIN-SUFFIX,pscp.tv,🌐 社交媒体
-  - DOMAIN-SUFFIX,twimg.co,🌐 社交媒体
-  - DOMAIN-SUFFIX,twimg.org,🌐 社交媒体
-  - DOMAIN-SUFFIX,twitpic.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,twitter.biz,🌐 社交媒体
-  - DOMAIN-SUFFIX,twitter.jp,🌐 社交媒体
-  - DOMAIN-SUFFIX,twittercommunity.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,twitterinc.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,twttr.com,🌐 社交媒体
-  - DOMAIN-SUFFIX,vine.co,🌐 社交媒体
-  - DOMAIN-KEYWORD,twitter,🌐 社交媒体
-  - IP-CIDR,199.16.156.0/22,🌐 社交媒体,no-resolve
-  - IP-CIDR,199.59.148.0/22,🌐 社交媒体,no-resolve
-  - IP-CIDR,104.244.42.0/21,🌐 社交媒体,no-resolve
-  - IP-CIDR,192.133.76.0/22,🌐 社交媒体,no-resolve
-  - IP-CIDR,199.96.56.0/21,🌐 社交媒体,no-resolve
-  - IP-CIDR,209.237.192.0/19,🌐 社交媒体,no-resolve
-  - IP-CIDR,69.195.160.0/19,🌐 社交媒体,no-resolve
+  - DOMAIN-SUFFIX,x.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,t.co,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,tweetdeck.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,periscope.tv,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,pscp.tv,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.co,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twimg.org,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twitpic.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.biz,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twitter.jp,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twittercommunity.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twitterinc.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,twttr.com,🧩 🌐 社交媒体
+  - DOMAIN-SUFFIX,vine.co,🧩 🌐 社交媒体
+  - DOMAIN-KEYWORD,twitter,🧩 🌐 社交媒体
+  - IP-CIDR,199.16.156.0/22,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,199.59.148.0/22,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,104.244.42.0/21,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,192.133.76.0/22,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,199.96.56.0/21,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,209.237.192.0/19,🧩 🌐 社交媒体,no-resolve
+  - IP-CIDR,69.195.160.0/19,🧩 🌐 社交媒体,no-resolve
 
   # 加密货币交易所 / 行情站点
-  - DOMAIN-SUFFIX,binance.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,binance.cloud,₿ 加密交易所
-  - DOMAIN-SUFFIX,bnappzh.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,bnbstatic.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,okx.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,okex.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,oklink.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,okx-dns.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,bybit.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,bitget.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,bitget.top,₿ 加密交易所
-  - DOMAIN-SUFFIX,bitget.vip,₿ 加密交易所
-  - DOMAIN-SUFFIX,aicoin.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,blockchair.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,blockchain.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,bscscan.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,coinglass.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,etherscan.io,₿ 加密交易所
-  - DOMAIN-SUFFIX,gate.io,₿ 加密交易所
-  - DOMAIN-SUFFIX,mexc.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,tradingview.com,₿ 加密交易所
-  - DOMAIN-SUFFIX,tokenpocket.pro,₿ 加密交易所
-  - DOMAIN-KEYWORD,binance,₿ 加密交易所
-  - DOMAIN-KEYWORD,bitcoin,₿ 加密交易所
-  - DOMAIN-KEYWORD,bitget,₿ 加密交易所
-  - DOMAIN-KEYWORD,bybit,₿ 加密交易所
-  - DOMAIN-KEYWORD,coinbase,₿ 加密交易所
-  - DOMAIN-KEYWORD,coingecko,₿ 加密交易所
-  - DOMAIN-KEYWORD,coinmarketcap,₿ 加密交易所
-  - DOMAIN-KEYWORD,crypto,₿ 加密交易所
-  - DOMAIN-KEYWORD,ethereum,₿ 加密交易所
-  - DOMAIN-KEYWORD,huobi,₿ 加密交易所
-  - DOMAIN-KEYWORD,kucoin,₿ 加密交易所
-  - DOMAIN-KEYWORD,okx,₿ 加密交易所
-  - DOMAIN-KEYWORD,okex,₿ 加密交易所
-  - DOMAIN-KEYWORD,tronscan,₿ 加密交易所
-  - DOMAIN-KEYWORD,uniswap,₿ 加密交易所
+  - DOMAIN-SUFFIX,binance.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,binance.cloud,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bnappzh.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bnbstatic.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,okx.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,okex.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,oklink.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,okx-dns.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bybit.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.top,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bitget.vip,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,aicoin.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,blockchair.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,blockchain.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,bscscan.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,coinglass.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,etherscan.io,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,gate.io,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,mexc.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,tradingview.com,🧩 ₿ 加密交易所
+  - DOMAIN-SUFFIX,tokenpocket.pro,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,binance,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,bitcoin,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,bitget,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,bybit,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,coinbase,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,coingecko,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,coinmarketcap,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,crypto,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,ethereum,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,huobi,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,kucoin,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,okx,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,okex,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,tronscan,🧩 ₿ 加密交易所
+  - DOMAIN-KEYWORD,uniswap,🧩 ₿ 加密交易所
 
-  - GEOSITE,onedrive,💾 OneDrive
-  - GEOSITE,github,🚀 GitHub
-  - GEOSITE,category-speedtest,🚀 测速工具
-  - GEOSITE,steam,🎮 Steam
+  - GEOSITE,onedrive,🧩 💾 OneDrive
+  - GEOSITE,github,🧩 🚀 GitHub
+  - GEOSITE,category-speedtest,🧩 🚀 测速工具
+  - GEOSITE,steam,🧩 🎮 Steam
 
   # ⑱ NBA
-  - DOMAIN,watch.nba.com,🏀 NBA
-  - DOMAIN-SUFFIX,nba.com,🏀 NBA
+  - DOMAIN,watch.nba.com,🧩 🏀 NBA
+  - DOMAIN-SUFFIX,nba.com,🧩 🏀 NBA
 
   # ⑲ 特殊站点
-  - DOMAIN-SUFFIX,18comic.vip,🇭🇰 香港节点
-  - DOMAIN-SUFFIX,gamsgo.com,🇺🇸 美国节点
-  - DOMAIN-SUFFIX,gamsgo.net,🇺🇸 美国节点
-  - DOMAIN-SUFFIX,gamsgo2.com,🇺🇸 美国节点
-  - DOMAIN-SUFFIX,gamsgocdn.com,🇺🇸 美国节点
+  - DOMAIN-SUFFIX,18comic.vip,🧩 🇭🇰 香港节点
+  - DOMAIN-SUFFIX,gamsgo.com,🧩 🇺🇸 美国节点
+  - DOMAIN-SUFFIX,gamsgo.net,🧩 🇺🇸 美国节点
+  - DOMAIN-SUFFIX,gamsgo2.com,🧩 🇺🇸 美国节点
+  - DOMAIN-SUFFIX,gamsgocdn.com,🧩 🇺🇸 美国节点
 
   # ⑳ 大厂服务（Apple 通用规则在 Apple Intelligence 之后）
-  - GEOSITE,apple,🍎 苹果服务
-  - GEOSITE,microsoft,Ⓜ️ 微软服务
-  - GEOSITE,tiktok,🎶 TikTok
+  - GEOSITE,apple,🧩 🍎 苹果服务
+  - GEOSITE,microsoft,🧩 Ⓜ️ 微软服务
+  - GEOSITE,tiktok,🧩 🎶 TikTok
 
   # ㉑ 影音/游戏/媒体
-  - GEOSITE,category-emby,🎥 Emby
-  - GEOSITE,spotify,🎻 Spotify
-  - GEOSITE,category-games,🎮 游戏平台
-  - GEOSITE,category-entertainment,🌎 国外媒体
-  - GEOSITE,category-pt,⏬ PT站点
-  - GEOSITE,paypal,💳 PayPal
-  - GEOSITE,category-ecommerce,🛒 国外电商
+  - GEOSITE,category-emby,🧩 🎥 Emby
+  - GEOSITE,spotify,🧩 🎻 Spotify
+  - GEOSITE,category-games,🧩 🎮 游戏平台
+  - GEOSITE,category-entertainment,🧩 🌎 国外媒体
+  - GEOSITE,category-pt,🧩 ⏬ PT站点
+  - GEOSITE,paypal,🧩 💳 PayPal
+  - GEOSITE,category-ecommerce,🧩 🛒 国外电商
 
   # ㉒ GFW 列表
-  - GEOSITE,gfw,🚀 主力代理
+  - GEOSITE,gfw,🧩 🚀 主力代理
 
   # ㉓ GEOIP 分流
-  - GEOIP,telegram,💬 即时通讯,no-resolve
-  - GEOIP,twitter,🌐 社交媒体,no-resolve
-  - GEOIP,facebook,🌐 社交媒体,no-resolve
+  - GEOIP,telegram,🧩 💬 即时通讯,no-resolve
+  - GEOIP,twitter,🧩 🌐 社交媒体,no-resolve
+  - GEOIP,facebook,🧩 🌐 社交媒体,no-resolve
 
   # ㉔ 中国直连
-  - GEOSITE,cn,🎯 全球直连
-  - GEOIP,cn,🎯 全球直连,no-resolve
+  - GEOSITE,cn,🧩 🎯 全球直连
+  - GEOIP,cn,🧩 🎯 全球直连,no-resolve
 
   # ㉕ 非标端口
-  - RULE-SET,Custom_Port_Direct,🔀 非标端口
+  - RULE-SET,Custom_Port_Direct,🧩 🔀 非标端口
 
   # ㉖ 漏网之鱼（兜底）
-  - MATCH,🐟 漏网之鱼
+  - MATCH,🧩 🐟 漏网之鱼
 
 # ==========================================
 # 🌐 DNS 配置
